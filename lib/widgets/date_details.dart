@@ -15,7 +15,7 @@ class DateDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 4.0),
+      padding: const EdgeInsets.fromLTRB(14.0, 14.0, 14.0, 10.0),
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(8.0),
@@ -25,9 +25,10 @@ class DateDetails extends StatelessWidget {
           Text(
             dayOfTheWeek,
             style: const TextStyle(
-                color: kDayOfTheWeekColor,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w500),
+              color: kDayOfTheWeekColor,
+              fontSize: 14.0,
+              fontWeight: FontWeight.bold,
+            ),
           ),
           const Padding(padding: EdgeInsets.only(bottom: 5.0)),
           Text(
@@ -41,7 +42,7 @@ class DateDetails extends StatelessWidget {
           const Padding(padding: EdgeInsets.only(bottom: 3.0)),
           const Icon(
             Icons.fiber_manual_record,
-            size: 15.0,
+            size: 8.0,
             color: Colors.black,
           )
         ],
