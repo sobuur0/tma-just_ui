@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tma_just_ui/constants/colors.dart';
+import 'package:tma_just_ui/pages/new_meeting_page.dart';
 import 'package:tma_just_ui/widgets/date_details.dart';
 import 'package:tma_just_ui/widgets/funny_container_child.dart';
 
@@ -52,7 +53,13 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const NewMeetingPage(),
+            ),
+          );
+        },
         backgroundColor: kFabColor2,
         child: const Icon(
           Icons.add,
