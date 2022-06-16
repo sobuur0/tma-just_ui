@@ -12,6 +12,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  late bool _isPressed = false;
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -286,36 +288,66 @@ class _HomePageState extends State<HomePage> {
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: const [
+        children: [
           DateDetails(
             dayOfTheWeek: 'Mon',
             date: '09',
-            color: Colors.white,
+            color: _isPressed == false ? kLightPinkColor : Colors.white,
+            onTap: () {
+              setState(() {
+                _isPressed = !_isPressed;
+              });
+            },
           ),
           DateDetails(
             dayOfTheWeek: 'Tue',
             date: '10',
-            color: Colors.white,
+            color: _isPressed == false ? kLightPinkColor : Colors.white,
+            onTap: () {
+              setState(() {
+                _isPressed = !_isPressed;
+              });
+            },
           ),
           DateDetails(
             dayOfTheWeek: 'Wed',
             date: '11',
-            color: Colors.white,
+            color: _isPressed == false ? kLightPinkColor : Colors.white,
+            onTap: () {
+              setState(() {
+                _isPressed = !_isPressed;
+              });
+            },
           ),
           DateDetails(
             dayOfTheWeek: 'Thu',
             date: '12',
-            color: Colors.white,
+            color: _isPressed == false ? kLightPinkColor : Colors.white,
+            onTap: () {
+              setState(() {
+                _isPressed = !_isPressed;
+              });
+            },
           ),
           DateDetails(
             dayOfTheWeek: 'Fri',
             date: '13',
             color: Colors.white,
+            onTap: () {
+              setState(() {
+                _isPressed = !_isPressed;
+              });
+            },
           ),
           DateDetails(
             dayOfTheWeek: 'Sat',
             date: '14',
-            color: Colors.white,
+            color: _isPressed == false ? kLightPinkColor : Colors.white,
+            onTap: () {
+              setState(() {
+                _isPressed = !_isPressed;
+              });
+            },
           ),
         ],
       ),

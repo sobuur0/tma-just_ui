@@ -3,14 +3,14 @@ import 'package:tma_just_ui/constants/colors.dart';
 
 class ThisTextField extends StatelessWidget {
   final TextEditingController textController;
-  final String? Function(String?) validator;
+  // final String? Function(String?) validator;
   final TextInputType keyboardType;
   final Widget? trailing;
 
   const ThisTextField({
     Key? key,
     required this.textController,
-    required this.validator,
+    // required this.validator,
     required this.keyboardType,
     this.trailing,
   }) : super(key: key);
@@ -21,7 +21,7 @@ class ThisTextField extends StatelessWidget {
       padding: const EdgeInsets.only(left: 12.0, right: 12.0),
       child: TextFormField(
         controller: textController,
-        validator: validator,
+        // validator: validator,
         keyboardType: keyboardType,
         textInputAction: TextInputAction.next,
         onSaved: (value) {

@@ -43,13 +43,13 @@ class _NewMeetingPageState extends State<NewMeetingPage> {
           const Padding(padding: EdgeInsets.only(bottom: 16.0)),
           ThisTextField(
             textController: _aboutController,
-            validator: (value) {},
+            // validator: (value) {},
             keyboardType: TextInputType.text,
           ),
           const Padding(padding: EdgeInsets.only(bottom: 16.0)),
           ThisTextField(
             textController: _placeController,
-            validator: (value) {},
+            // validator: (value) {},
             keyboardType: TextInputType.text,
           ),
         ],
