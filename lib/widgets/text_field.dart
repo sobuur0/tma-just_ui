@@ -6,6 +6,7 @@ class ThisTextField extends StatelessWidget {
   // final String? Function(String?) validator;
   final TextInputType keyboardType;
   final Widget? trailing;
+  final String hint;
 
   const ThisTextField({
     Key? key,
@@ -13,12 +14,13 @@ class ThisTextField extends StatelessWidget {
     // required this.validator,
     required this.keyboardType,
     this.trailing,
+    required this.hint
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 12.0, right: 12.0),
+      padding: const EdgeInsets.only(left: 16.0, right: 16.0),
       child: TextFormField(
         controller: textController,
         // validator: validator,
@@ -31,6 +33,7 @@ class ThisTextField extends StatelessWidget {
           filled: true,
           fillColor: kBlueGradientColor,
           suffixIcon: trailing,
+          hintText: hint,
           contentPadding:
               const EdgeInsets.symmetric(horizontal: 12.0, vertical: 2.0),
           border: OutlineInputBorder(
