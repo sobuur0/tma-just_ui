@@ -8,19 +8,19 @@ class ThisTextField extends StatelessWidget {
   final Widget? trailing;
   final String hint;
 
-  const ThisTextField({
-    Key? key,
-    required this.textController,
-    // required this.validator,
-    required this.keyboardType,
-    this.trailing,
-    required this.hint
-  }) : super(key: key);
+  const ThisTextField(
+      {Key? key,
+      required this.textController,
+      // required this.validator,
+      required this.keyboardType,
+      this.trailing,
+      required this.hint})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
       child: TextFormField(
         controller: textController,
         // validator: validator,
@@ -37,21 +37,21 @@ class ThisTextField extends StatelessWidget {
           contentPadding:
               const EdgeInsets.symmetric(horizontal: 12.0, vertical: 2.0),
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(5.0),
+            borderRadius: BorderRadius.circular(8.0),
             borderSide: const BorderSide(
               color: kBlueGradientColor,
               width: 1.0,
             ),
           ),
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(5.0),
+            borderRadius: BorderRadius.circular(8.0),
             borderSide: const BorderSide(
               color: kBlueGradientColor,
               width: 1.0,
             ),
           ),
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(5.0),
+            borderRadius: BorderRadius.circular(8.0),
             borderSide: const BorderSide(
               color: kBlueGradientColor,
               width: 1.0,

@@ -1,16 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:tma_just_ui/constants/colors.dart';
 
 class FunnyContainerChild extends StatelessWidget {
   final Widget child;
-  const FunnyContainerChild({Key? key, required this.child,}) : super(key: key);
+  final double padding;
+  final Color mainColor;
+  final Color outerColor;
+  const FunnyContainerChild({
+    Key? key,
+    required this.child,
+    this.padding = 8.0,
+    this.mainColor = const Color(0xFFDCD1CE),
+    this.outerColor = kDayOfTheWeekColor,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(8.0),
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(8.0),
+      padding: EdgeInsets.all(padding),
+      decoration: ShapeDecoration(
+        color: mainColor,
+        shape: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8.0),
+          borderSide: BorderSide(
+            color: outerColor,
+            width: 1.0,
+          ),
+        ),
       ),
       child: child,
     );

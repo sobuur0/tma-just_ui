@@ -333,6 +333,7 @@ class _HomePageState extends State<HomePage> {
             dayOfTheWeek: 'Fri',
             date: '13',
             color: Colors.white,
+            dotColor: Colors.black,
             onTap: () {
               setState(() {
                 _isPressed = !_isPressed;
@@ -466,6 +467,8 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FunnyContainerChild(
+            mainColor: Colors.black,
+            outerColor: Colors.black,
             child: Row(
               children: const [
                 Icon(

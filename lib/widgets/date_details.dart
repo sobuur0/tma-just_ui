@@ -6,12 +6,16 @@ class DateDetails extends StatelessWidget {
   final String date;
   final Color color;
   final VoidCallback onTap;
+  final double leftPadding;
+  final Color dotColor;
   const DateDetails({
     Key? key,
     required this.dayOfTheWeek,
     required this.date,
     required this.color,
     required this.onTap,
+    this.leftPadding = 14.0,
+    this.dotColor = kLightPinkColor,
   }) : super(key: key);
 
   @override
@@ -19,7 +23,7 @@ class DateDetails extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.fromLTRB(14.0, 14.0, 14.0, 10.0),
+        padding: EdgeInsets.fromLTRB(leftPadding, 14.0, 14.0, 10.0),
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(8.0),
@@ -44,10 +48,10 @@ class DateDetails extends StatelessWidget {
               ),
             ),
             const Padding(padding: EdgeInsets.only(bottom: 3.0)),
-            const Icon(
+            Icon(
               Icons.fiber_manual_record,
               size: 8.0,
-              color: Colors.black,
+              color: dotColor,
             )
           ],
         ),
