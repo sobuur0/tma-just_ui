@@ -4,7 +4,7 @@ A new Flutter project.
 
 Screenshots:
 
-<img src="https://user-images.githubusercontent.com/45358715/164335151-edce4366-184a-4025-9cf4-cb4f4d562a0e.png" width="200"/>         <img src="https://user-images.githubusercontent.com/45358715/164335244-90abbdb9-0acd-4ccd-b5dc-4bf0431b0dac.png" width="200"/> <img src="https://user-images.githubusercontent.com/45358715/164335280-d87f8788-5129-49ae-a02d-3bca6d8ccc35.png" width="200"/>
+<img src="https://user-images.githubusercontent.com/45358715/174803064-54ed10de-8238-490c-9867-227214fddcb5.png" width="200"/>         <img src="https://user-images.githubusercontent.com/45358715/174803277-dd5df29c-b6b1-42a0-b134-04aa8d522326.png" width="200"/> <img src="https://user-images.githubusercontent.com/45358715/174803416-987fbdf0-9b61-4f44-8cca-2221c03c7196.png" width="200"/>
 
 ## Getting Started
 
