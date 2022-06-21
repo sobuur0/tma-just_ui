@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tma_just_ui/constants/colors.dart';
+import 'package:tma_just_ui/pages/experience_page.dart';
 import 'package:tma_just_ui/widgets/date_details.dart';
 import 'package:tma_just_ui/widgets/funny_container_child.dart';
 import 'package:tma_just_ui/widgets/text_field.dart';
@@ -246,7 +247,13 @@ class _NewMeetingPageState extends State<NewMeetingPage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const ExperiencePage(),
+                  ),
+                );
+              },
               style: ElevatedButton.styleFrom(
                 primary: Colors.black,
                 fixedSize: const Size.fromHeight(56.0),
